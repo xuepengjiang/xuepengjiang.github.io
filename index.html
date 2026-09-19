@@ -5,51 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Xuepeng Jiang</title>
   <style>
-    body{max-width:860px;margin:60px auto;padding:0 20px;font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial;}
-    h1{margin:0 0 8px;}
-    .muted{color:#555}
-    a{color:inherit}
-    ul{padding-left:18px}
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --link: #0056b3;
+      --border: #e5e5e5;
+    }
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px;
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+    }
+    h1 { margin: 0 0 6px; font-size: 2rem; }
+    h2 { 
+      margin: 36px 0 14px; 
+      font-size: 1.25rem; 
+      border-bottom: 1px solid var(--border); 
+      padding-bottom: 6px; 
+    }
+    p { margin: 0 0 14px; }
+    .subtitle { color: var(--muted); font-size: 1.05rem; margin-bottom: 16px; }
+    .social-links a { margin-right: 14px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; margin: 0 0 16px; }
+    li { margin-bottom: 8px; }
+    .skill-list li { margin-bottom: 6px; }
+    .tools-tag {
+      display: inline-block;
+      background: #f1f3f5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      margin: 2px 4px 2px 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Xuepeng Jiang</h1>
-  <p class="muted">PhD Candidate · Manufacturing / Laser · UW–Madison</p>
 
-  <h2>About</h2>
-  <p>Short bio goes here.
-  I design, build, and troubleshoot complex laser manufacturing and optical metrology systems—from beam delivery to process control.
+  <header>
+    <h1>Xuepeng Jiang</h1>
+    <p class="subtitle">Ph.D. Candidate · Laser Manufacturing & Optical Metrology · UW–Madison</p>
+    <p class="social-links">
+      <a href="mailto:you@wisc.edu">Email</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Google Scholar</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="resume.pdf" target="_blank">CV (PDF)</a>
+    </p>
+  </header>
 
+  <section>
+    <h2>About</h2>
+    <p>
+      I design, build, and troubleshoot complex laser manufacturing and optical metrology systems—from beam delivery optics to closed-loop process control.
+    </p>
+    <p>
+      Currently a Ph.D. Candidate in Industrial & Systems Engineering (Minor in Physics) at the <strong>University of Wisconsin–Madison</strong>, with a physics background from <strong>The Ohio State University</strong>. My research bridges optical instrumentation with high-precision manufacturing:
+    </p>
 
+    <ul class="skill-list">
+      <li><strong>Laser Systems:</strong> Ultrafast and DUV beam profiling, beam delivery, precision optical alignment, and laser-material interaction.</li>
+      <li><strong>Optical Metrology:</strong> In-situ digital holographic microscopy (DHM), laser diffraction, high-speed imaging, and high-temperature pyrometry.</li>
+      <li><strong>Hardware & Process:</strong> Full-cycle optomechanical integration (DFM/NPI), additive manufacturing (EHD, DED, LPBF), and root cause analysis (RCA/DOE).</li>
+    </ul>
 
-Currently a Ph.D. Candidate at UW–Madison (Industrial & Systems Engineering, Minor in Physics) with a physics foundation from The Ohio State University. My work bridges optical instrumentation with advanced manufacturing processes:
+    <p>
+      <strong>Tools & Skills:</strong><br />
+      <span class="tools-tag">Zemax</span>
+      <span class="tools-tag">COMSOL</span>
+      <span class="tools-tag">SolidWorks</span>
+      <span class="tools-tag">Python</span>
+      <span class="tools-tag">OpenCV</span>
+      <span class="tools-tag">LabVIEW / MATLAB</span>
+    </p>
 
+    <p>
+      <em>Beyond the lab:</em> When stepping away from the optical table, I spend my time tearing down and rebuilding project cars, landscape photography, or backpacking. Whether diagnosing engine vibration or aligning a sub-micron laser focus, I enjoy the craft of understanding how complex physical systems work.
+    </p>
+  </section>
 
+  <section>
+    <h2>Selected Projects</h2>
+    <ul>
+      <li>
+        <strong>Ultrafast Laser In-Situ Diagnostic Setup</strong> — Engineered an inline DHM metrology module for real-time laser ablation tracking.
+      </li>
+      <li>
+        <strong>High-Resolution DUV Optical Testbed</strong> — Designed custom beam delivery mechanics with sub-micron motion stages.
+      </li>
+    </ul>
+  </section>
 
- · Laser Systems: Ultrafast and DUV beam profiling, delivery, precision alignment, and laser material interaction.
+  <section>
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>
+        <strong>X. Jiang</strong>, et al., "Title of your journal paper," <em>Optics & Laser Technology</em>, 2025. 
+        [<a href="#">PDF</a>] [<a href="#">DOI</a>]
+      </li>
+    </ul>
+  </section>
 
- · Optical Metrology: In-situ digital holographic microscopy (DHM), laser diffraction, high-speed microscopy and pyrometry.
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Office: Mechanical Engineering Building, UW–Madison<br />
+      Email: <a href="mailto:you@wisc.edu">you@wisc.edu</a>
+    </p>
+  </section>
 
- · Hardware & Process: Full-cycle integration (DFM/NPI), micro/metal additive manufacturing (EHD, DED, LPBF), and structured root cause problem-solving (RCA/DOE).
-
- · Tools: Zemax, COMSOL, SolidWorks, Python, OpenCV.
-
-
-
-Beyond the lab: When stepping away from the optics table, I’m usually in the garage doing mechanical tear-downs on project cars, exploring landscapes with a DSLR, or out on the trail. Whether tracking down an engine vibration or aligning a sub-micron laser spot, I enjoy the craft of understanding how complex physical systems work.</p>
-
-  <h2>Projects</h2>
-  <ul>
-    <li>Project A — one line contribution</li>
-    <li>Project B — one line contribution</li>
-  </ul>
-
-  <h2>Publications</h2>
-  <ul>
-    <li>Paper 1 — <a href="#">PDF</a></li>
-  </ul>
-
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:you@email.com">you@email.com</a> · <a href="#">LinkedIn</a></p>
 </body>
 </html>
